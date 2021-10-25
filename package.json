@@ -1,0 +1,31 @@
+{
+  "name": "CartoonListV2",
+  "version": "1.0.0",
+  "description": "Remaking the Cartoon List with plans of long term support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregorymacat/CartoonListV2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregorymacat/CartoonListV2/issues"
+  },
+  "homepage": "https://github.com/gregorymacat/CartoonListV2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
