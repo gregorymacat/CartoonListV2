@@ -10,6 +10,9 @@ function LandingPage (props) {
         <label>Password</label>
         <input id="user-pass" type="text">
         </input>
+        <button onClick={props.toggleLogin}>
+          Sign In
+        </button>
       </form>
     </div>
   )
