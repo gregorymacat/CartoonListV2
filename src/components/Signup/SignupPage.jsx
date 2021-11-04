@@ -2,16 +2,13 @@ import React, {useState} from 'react';
 
 function inputValidation (email, password) {
   let errors = {};
-  let errorFound = false;
 
   if (email.split('@').length < 2) {
     errors.email = 'Please enter a valid email';
-    errorFound = true;
   }
 
   if (password.length < 6) {
     errors.password = 'Password must be at least 6 characters long';
-    errorFound = true;
   }
   return errors;
 }
@@ -61,7 +58,5 @@ function SignupPage (props) {
     </div>
   )
 }
-
-
 
 export default SignupPage;
