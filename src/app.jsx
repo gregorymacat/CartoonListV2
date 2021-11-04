@@ -1,12 +1,13 @@
 import React from 'react';
-import LandingPage from './components/Landing/LandingPage.jsx';
-import Navbar from './components/Nav/Navbar.jsx';
+import SignupPage from './components/Signup/SignupPage.jsx';
+import HomePage from './components/Home/HomePage.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super();
     this.state = {
       isLoggedIn: false,
+      pageSelected: 'SignupPage',
     }
     this.toggleLogin = this.toggleLogin.bind(this);
   }
@@ -20,8 +21,8 @@ class App extends React.Component {
       <React.Fragment>
         {
           this.state.isLoggedIn === false ?
-          <LandingPage toggleLogin={this.toggleLogin}/> :
-          <Navbar/>
+          <SignupPage toggleLogin={this.toggleLogin}/> :
+          <HomePage/>
         }
       </React.Fragment>
     )
