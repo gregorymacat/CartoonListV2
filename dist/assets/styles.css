@@ -7,16 +7,73 @@ Light Background: F9F9F9 (Cultured)
 Dark Background: 36393B (Onyx)
 Dark Accent: 0F0326 (Dark Purple)
 */
+
+/***************
+*General Styles*
+****************/
 body {
   background: #F9F9F9;
 }
 #app {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-form {
+
+/**************
+*Navbar Styles*
+***************/
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/***************
+*Sign in Styles*
+****************/
+.sign-in form {
   background-color: #5AA9E6;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/*****************
+*Home Page Styles*
+******************/
+.home-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+}
+.news-feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  /* border-top: black 1px solid;
+  border-bottom: black 1px solid; */
+}
+.news-article {
+  width: 100%;
+}
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  border-left: black 1px solid;
+}
+.friend-container {
+  display: flex;
+  flex-direction: row;
+}
+.friend-container img{
+  width: 80px;
+  height: 80px;
 }
