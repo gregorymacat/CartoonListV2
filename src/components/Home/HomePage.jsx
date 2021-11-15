@@ -3,10 +3,10 @@ import Navbar from '../Shared/Navbar.jsx';
 import NewsFeed from './NewsFeed.jsx';
 import FriendsList from './FriendsList.jsx';
 
-function HomePage() {
+function HomePage(props) {
   return (
     <React.Fragment>
-      <Navbar/>
+      <Navbar click={props.click}/>
       <div className="home-container">
         <NewsFeed/>
         <FriendsList/>

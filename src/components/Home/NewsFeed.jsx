@@ -12,6 +12,10 @@ function NewsFeed () {
         <h2>Added friends list to home page</h2>
         <span>The second feature to be implemented</span>
       </div>
+      <div className="news-article">
+        <h2>Added switching pages feature</h2>
+        <span>This will allow the user to switch between list (not yet implemented) and home page</span>
+      </div>
     </div>
   )
 }
