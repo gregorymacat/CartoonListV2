@@ -11,33 +11,42 @@ Dark Accent: 0F0326 (Dark Purple)
 /***************
 *General Styles*
 ****************/
-body {
-  background: #F9F9F9;
-}
 #app {
+  background-color: #F9F9F9;
+}
+
+/***************
+*Sign in Styles*
+****************/
+.sign-in-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  height: 30vh;
+  width: 20vw;
+  background-color: #5AA9E6;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px black;
+}
+form.sign-in {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+form.sign-in input {
+  margin-bottom: 8%;
 }
 
 /**************
 *Navbar Styles*
 ***************/
 .navbar {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-
-/***************
-*Sign in Styles*
-****************/
-.sign-in form {
-  background-color: #5AA9E6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  padding: 1%;
 }
 
 /*****************
@@ -59,9 +68,21 @@ body {
   /* border-top: black 1px solid;
   border-bottom: black 1px solid; */
 }
+.news-feed h1 {
+  margin: 1% auto;
+}
 .news-article {
   width: 100%;
+  padding: 1%;
+  border-top: black 1px solid;
 }
+.news-article h2 {
+  text-align: center;
+}
+.news-article span {
+  margin-left: 1%;
+}
+
 .friends-list {
   display: flex;
   flex-direction: column;
@@ -69,11 +90,20 @@ body {
   width: 20%;
   border-left: black 1px solid;
 }
+.friends-list h1 {
+  width: 100%;
+  padding: 4%;
+  border-bottom: black 1px solid;
+}
 .friend-container {
   display: flex;
   flex-direction: row;
+  margin: 15px;
 }
 .friend-container img{
   width: 80px;
   height: 80px;
+}
+.friend-container h2{
+  margin: auto 20px;
 }

@@ -37,7 +37,7 @@ function SignupPage (props) {
   }
 
   return (
-    <div>
+    <div className="sign-in-container">
       <form className="sign-in">
         <label>Email</label>
         <input id="user-email" type="text" onChange={handleChange}></input>
